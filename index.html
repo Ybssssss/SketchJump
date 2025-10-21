@@ -6,7 +6,6 @@
     <title>Unity Web Player | Sketch-Jump-main</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-
     <style>
       #unity-container:fullscreen {
         display: grid !important;
@@ -70,12 +69,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Web_jump.loader.js";
+      var loaderUrl = buildUrl + "/SketchJump.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Web_jump.data",
-        frameworkUrl: buildUrl + "/Web_jump.framework.js",
-        codeUrl: buildUrl + "/Web_jump.wasm",
+        dataUrl: buildUrl + "/SketchJump.data",
+        frameworkUrl: buildUrl + "/SketchJump.framework.js",
+        codeUrl: buildUrl + "/SketchJump.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Sketch-Jump-main",
@@ -116,8 +115,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+        canvas.style.width = "540px";
+        canvas.style.height = "960px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
